@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Job Roberts Photography</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/pages.css"/>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+
+    <noscript>
+        <style>
+            .es-carousel ul{
+                display:block;
+            }
+        </style>
+    </noscript>
+    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <header>
+           <img id="logo" src="img/logo.png" width="250" height="250" />
+
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Images</a></li>
+                    <li><a href="datavis.html">Data</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+
+				<span class="right_ab">
+
+				</span>
+        <div class="clr"></div>
+    </div><!-- header -->
+
+    <div class="content">
+
+        <div id="rg-gallery" class="rg-gallery">
+            <div class="rg-thumbs" style="margin-top: 123px">
+                <!-- Elastislide Carousel Thumbnail Viewer -->
+                <div class="es-carousel-wrapper">
+                    <div class="es-nav">
+                        <span class="es-nav-prev">Previous</span>
+                        <span class="es-nav-next">Next</span>
+                    </div>
+                    <div class="es-carousel">
+                        <ul>
+                            <li><a href="#"><img src="img/thumbs/1.jpg" data-large="img/1.jpg" alt="image01" data-description="Aaron Lewis-Staind" /></a></li>
+                            <li><a href="#"><img src="img/thumbs/2.jpg" data-large="img/2.jpg" alt="image02" data-description="Light Work" /></a></li>
+                            <li><a href="#"><img src="img/thumbs/3.jpg" data-large="img/3.jpg" alt="image03" data-description="Light Work" /></a></li>
+                            <li><a href="#"><img src="img/thumbs/4.jpg" data-large="img/4.jpg" alt="image04" data-description="Light Work" /></a></li>
+                            <li><a href="#"><img src="img/thumbs/5.jpg" data-large="img/5.jpg" alt="image05" data-description="Light Work" /></a></li>
+                            <li><a href="#"><img src="img/thumbs/6.jpg" data-large="img/6.jpg" alt="image06" data-description="Abigail's Broken" /></a></li>
+                            <li><a href="#"><img src="img/thumbs/7.jpg" data-large="img/7.jpg" alt="image07" data-description="Disturbed" /></a></li>
+                            <li><a href="#"><img src="img/thumbs/8.jpg" data-large="img/8.jpg" alt="image08" data-description="Disturbed-David Draiman" /></a></li>
+                            <li><a href="#"><img src="img/thumbs/9.jpg" data-large="img/9.jpg" alt="image09" data-description="Malt shop-Meryl" /></a></li>
+                            <li><a href="#"><img src="img/thumbs/10.jpg" data-large="img/10.jpg" alt="image10" data-description="Before and After Photoshop Work" /></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Carousel Thumbnail Viewer -->
+            </div><!-- rg-thumbs -->
+        </div><!-- rg-gallery -->
+    </div><!-- content -->
+</div><!-- container -->
+
+
+
+
+<section>
+    <h1>Video and Animation Work</h1>
+
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rcbh5BTaw7U" frameborder="0" allowfullscreen></iframe>   <iframe width="560" height="315" src="https://www.youtube.com/embed/3MfwlTjR2Iw" frameborder="0" allowfullscreen></iframe>
+</section>
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+<script type="text/javascript" src="js/gallery.js"></script>
+</body>
+</html>

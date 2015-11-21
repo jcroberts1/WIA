@@ -1,0 +1,101 @@
+html{
+    overflow-y: scroll;
+}
+
+header{
+    background:#252829;
+
+}
+
+header img{
+    margin:20px;
+}
+
+nav{
+    text-align: center;
+}
+
+h3{
+    font-size: 1.3em;
+    color:black;
+    position:absolute;
+    left:50px;
+    top:172px;
+}
+
+
+
+
+
+/* Data Vis */
+
+.dataVis{
+    margin-top:200px;
+    text-align: center;
+}
+
+/*footer*/
+#footer {
+    height: 100px;
+    background-color: #d0cdd0;
+}
+
+
+
+/* Map */
+
+.map{
+    margin-top:20px;
+    text-align: center;
+}
+
+#world-map{
+    position: relative;
+    margin:0px auto;
+    margin-top:90px;
+    margin-bottom:100px;
+}
+
+/* Contact */
+
+.contact{
+    margin-top:30px;
+    text-align: center;
+}
+
+.contact h4{
+    margin: 30px;
+    font-size: 1.4em;
+}
+
+.contact a{
+    background:none;
+    padding:0px;
+    color:black;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.contact a:hover{
+    background:white;
+    color:black;
+    color:#51bcee;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+
+contact a:active{
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+    color:#51bcee;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+
+.contact p{
+    margin:20px;
+}
+
+

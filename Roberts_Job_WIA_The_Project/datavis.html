@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <title>Job Roberts Photography</title>
+    <script src="js/Chart.js"></script>
+    <meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/pages.css"/>
+    <script src="includes/modernizr.js"></script>
+</head>
+<body>
+<header>
+    <a href="index.html"><img id="logo" src="img/logo.png" width="150" height="150" />Home</a>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Images</a></li>
+            <li><a href="datavis.html">Data</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="canvas-holder" style="width:30%">
+    <canvas id="chart-area" width="525" height="470" style="margin-left: 456px; margin-top: 214px"></canvas><h1>A visual chart of our work.</h1>
+
+
+
+
+</div>
+
+
+<script>
+    var polarData = [
+        {
+            value: 300,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Red"
+        },
+        {
+            value: 50,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+        },
+        {
+            value: 100,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Yellow"
+        },
+        {
+            value: 40,
+            color: "#949FB1",
+            highlight: "#A8B3C5",
+            label: "Grey"
+        },
+        {
+            value: 120,
+            color: "#4D5360",
+            highlight: "#616774",
+            label: "Dark Grey"
+        }
+    ];
+    window.onload = function(){
+        var ctx = document.getElementById("chart-area").getContext("2d");
+        window.myPolarArea = new Chart(ctx).PolarArea(polarData, {
+            responsive:true
+        });
+    };
+</script>
+</body>
+</html>
